@@ -22,6 +22,7 @@ ul li {
   color: #3a3a3a;
   font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .nav-heading {
   color: #3a3a3a;
@@ -91,15 +92,16 @@ ul li {
   border-right: 0;
   border-image-slice: 1;
   height: 100px;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
   margin: 0 220px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .logo-container > img {
-  width: 100%;
+  width: 80px;
+  height: 50px;
 }
 .popular {
   font-size: 1.5rem;
@@ -240,6 +242,12 @@ footer {
   .nav-menus > ul {
     flex-direction: column;
   }
+  .nav-menus > ul {
+    flex-direction: row;
+  }
+  .nav-menus ul li {
+    font-size: 10px;
+  }
   .full-banner-container {
     flex-direction: column-reverse;
     margin: 0 auto;
@@ -276,7 +284,9 @@ footer {
     border: none;
   }
   .logo-container > img {
-    width: 75%;
+    width: 70px;
+    /* padding: 4px; */
+    margin: 0 auto;
   }
   /* card section */
   .card-container {
